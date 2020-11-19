@@ -1,4 +1,4 @@
-﻿const Discord = require('discord.js');
+const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 exports.run = async (client, message, args) => {
    const filter = (reaction, user) => {
@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
   .setDescription(`<a:hyqued3:770590906746142730> Gezend Botumuzu Eklemek İçin \`g!davet-et\` Yazabilirsiniz.`)
 .addField(`__Ana Menü__`,` 🔴 `,true)
 .addField(`__Davet Komutları__`,` 🔘 `,true)
-.addField(`__Bilgilendirme__`,`<a:hyqued3:770590906746142730> \`g!davet-et\` | Gezend'i Sunucunuza Davet Edersiniz\n<a:hyqued3:770590906746142730> \`s!istatistik\` | Botun İstatistiklerini Gösterir`)
+.addField(`__Bilgilendirme__`,`<a:hyqued3:770590906746142730> \`g!davet-et\` | Gezend'i Sunucunuza Davet Edersiniz\n<a:hyqued3:770590906746142730> \`g!istatistik\` | Botun İstatistiklerini Gösterir\n<a:hyqued3:770590906746142730> \`g!komutlar\` | Botun Toplam Komutlarını Gösterir`)
   .setImage("https://images-ext-1.discordapp.net/external/Bb032GyJs8yCJiUy7tWQ-YnNRPreLuPDo-xp66eOIeU/https/images-ext-2.discordapp.net/external/H1PQhcDr-EaEvwENT8cUxj8S2yonFZl351YbXXH5sGs/https/media.discordapp.net/attachments/697145772801785876/716671769355747348/1.gif")
  var menü = await message.channel.send(yardım)
  const collector = menü.createReactionCollector(filter, { time: 99999 });
