@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+﻿const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 exports.run = async (client, message, args) => {
    const filter = (reaction, user) => {
@@ -26,7 +26,7 @@ collector.on('collect', (reaction, user) => {
      if(reaction.emoji.name == "🔘") {
     const TimsahTim = new Discord.MessageEmbed()
       .setColor("BLUE")
- .addField("**Davet Komutları**", `\n**g!**__rütbe-ekle @rol davet__ = **__Rütbe Ekler__** \n**g!**__rütbeler__ = **__Rütbeleri Gösterir 1 Den 10'a Kadar__** \n**g!**__rütbe-sıfırla__ = **__Rütbeyi Sıfırlar.__** \n**g!**__davetleri-sıfırla__ = **__Davetleri Sıfırlar.__** \n**g!**__top__ = **__Lider Tablosunu Gösterir.__** \n**g!**__davetlerim__ = **__Davetlerinizi Gösterir.__** \n**g!**__bonus-ekle__ = **__Bonus Ekler.__** \n**g!**__davet-kanal #kanal__ = **__Davet Kanalını Ayarlar.__** \n**g!**__davet-kanal-sıfırla__ = **__Davet Kanalını Sıfırlar.__**`)
+ .addField("**Davet Komutları**", `\n**g!**__davet-oluştur__ = **__Davet Oluşturur__** \n**g!**__rütbe-ekle @rol davet__ = **__Rütbe Ekler__** \n**g!**__rütbeler__ = **__Rütbeleri Gösterir 1 Den 10'a Kadar__** \n**g!**__rütbe-sıfırla__ = **__Rütbeyi Sıfırlar.__** \n**g!**__davetleri-sıfırla__ = **__Davetleri Sıfırlar.__** \n**g!**__top__ = **__Lider Tablosunu Gösterir.__** \n**g!**__davetlerim__ = **__Davetlerinizi Gösterir.__** \n**g!**__bonus-ekle__ = **__Bonus Ekler.__** \n**g!**__davet-kanal #kanal__ = **__Davet Kanalını Ayarlar.__** \n**g!**__davet-kanal-sıfırla__ = **__Davet Kanalını Sıfırlar.__**`)
 .setImage("https://cdn.discordapp.com/attachments/568831784024801316/778881448857829426/Gezend_Header.png")
   .setThumbnail("https://cdn.discordapp.com/attachments/568831784024801316/778882255245934592/Gezend_Logo.png")
  menü.edit(TimsahTim)
